@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+      table,th,td{
+        border: 1px solid black;
+      }
+      div.spelltable {
+        float:left;
+      }
+    </style>
+    <meta charset="utf-8">
+    <title>Castles & Crusades Druid</title>
+  </head>
+  <body onload="myFunction()">
+    <p><a href="classes.html">Back</a></p>
+    <h1 style="text-align:center">Cleric (Wisdom)</h1>
+    <br>
+    <p><b>Prime Attribute:</b> Wisdom</p>
+        <p><b>Hit Die:</b> d8</p>
+        <p> (Optional)<b>Alignment:</b> Neutral (any)</p>
+        <p><b>Weapons:</b> Bows, club, dagger, dart, hand axe, hammers, scythe,
+sling, sickle, spears, sword (any), staff</p>
+        <p><b>Armor:</b> Cuir bouille, laminar leather, padded, leather, leather
+coat, hide</p>
+        <p><b>Abilities:</b>
+          <a href="#druid_bonus_languages">Bonus languages,</a>
+          <a href="#druid_nature_lore">nature lore,</a>
+          <a href="#druid_resist_elements">resist elements,</a>
+          <a href="#druid_woodland_stride">woodland stride,</a>
+          <a href="#druid_totem_shape">totem shape,</a>
+          <a href="#druid_spells">spells </a>
+        <p><b>Starting Gold:</b> 20-200gp (2d8*10)</p>
+        <div class="spelltable">
+        <table>
+        <tr>
+          <th>Level</th>
+          <th>HD</th>
+          <th>BtH&nbsp;</th>
+          <th>Exp</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>d8</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>d8</td>
+          <td>+1</td>
+          <td>2.001</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>d8</td>
+          <td>+1</td>
+          <td>4.251</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>d8</td>
+          <td>+2</td>
+          <td>8.501</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>d8</td>
+          <td>+2</td>
+          <td>17.001</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>d8</td>
+          <td>+3</td>
+          <td>35.001</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>d8</td>
+          <td>+3</td>
+          <td>70.001</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>d8</td>
+          <td>+4</td>
+          <td>140.001</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>d8</td>
+          <td>+4</td>
+          <td>300.001</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>d8</td>
+          <td>+5</td>
+          <td>425.001</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>+4 HP</td>
+          <td>+5</td>
+          <td>650.001</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>+4 HP</td>
+          <td>+6</td>
+          <td>900.001</td>
+        </tr>
+        <tr>
+          <td>13+</td>
+          <td>+250.000 per level</td>
+        </table>
+        </div>
+        <table>
+        <tr>
+          <th>Level</th>
+          <th>0th</th>
+          <th>1st</th>
+          <th>2nd</th>
+          <th>3rd</th>
+          <th>4th</th>
+          <th>5th</th>
+          <th>6th</th>
+          <th>7th</th>
+          <th>8th</th>
+          <th>9th</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>3</td>
+          <td>1</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>4</td>
+          <td>2</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>4</td>
+          <td>2</td>
+          <td>1</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>4</td>
+          <td>3</td>
+          <td>2</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>4</td>
+          <td>3</td>
+          <td>2</td>
+          <td>1</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>4</td>
+          <td>3</td>
+          <td>3</td>
+          <td>2</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>5</td>
+          <td>4</td>
+          <td>3</td>
+          <td>2</td>
+          <td>1</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>5</td>
+          <td>4</td>
+          <td>3</td>
+          <td>3</td>
+          <td>2</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>5</td>
+          <td>4</td>
+          <td>4</td>
+          <td>3</td>
+          <td>2</td>
+          <td>1</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>5</td>
+          <td>4</td>
+          <td>4</td>
+          <td>3</td>
+          <td>3</td>
+          <td>2</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>6</td>
+          <td>5</td>
+          <td>4</td>
+          <td>4</td>
+          <td>3</td>
+          <td>2</td>
+          <td>1</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>6</td>
+          <td>5</td>
+          <td>4</td>
+          <td>4</td>
+          <td>3</td>
+          <td>3</td>
+          <td>2</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>6</td>
+          <td>5</td>
+          <td>5</td>
+          <td>4</td>
+          <td>4</td>
+          <td>3</td>
+          <td>2</td>
+          <td>1</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>6</td>
+          <td>5</td>
+          <td>5</td>
+          <td>4</td>
+          <td>4</td>
+          <td>3</td>
+          <td>3</td>
+          <td>2</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>6</td>
+          <td>5</td>
+          <td>5</td>
+          <td>5</td>
+          <td>4</td>
+          <td>4</td>
+          <td>3</td>
+          <td>2</td>
+          <td>1</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>6</td>
+          <td>6</td>
+          <td>5</td>
+          <td>5</td>
+          <td>4</td>
+          <td>4</td>
+          <td>3</td>
+          <td>3</td>
+          <td>2</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>7</td>
+          <td>6</td>
+          <td>5</td>
+          <td>5</td>
+          <td>5</td>
+          <td>4</td>
+          <td>4</td>
+          <td>3</td>
+          <td>2</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>7</td>
+          <td>6</td>
+          <td>6</td>
+          <td>5</td>
+          <td>5</td>
+          <td>4</td>
+          <td>4</td>
+          <td>3</td>
+          <td>3</td>
+          <td>2</td>
+        </tr>
+
+        <tr>
+          <td>19</td>
+          <td>7</td>
+          <td>6</td>
+          <td>6</td>
+          <td>5</td>
+          <td>5</td>
+          <td>5</td>
+          <td>4</td>
+          <td>4</td>
+          <td>3</td>
+          <td>2</td>
+        </tr>
+
+        <tr>
+          <td>20</td>
+          <td>7</td>
+          <td>6</td>
+          <td>6</td>
+          <td>6</td>
+          <td>5</td>
+          <td>5</td>
+          <td>4</td>
+          <td>4</td>
+          <td>3</td>
+          <td>3</td>
+        </tr>
+        </table>
+
+        <h5 id="druid_bonus_languages">BONUS LANGUAGES</h5>
+Druids have a secret language used for communicating
+with one another. They are forbidden from
+teaching this language to any but their
+brethren.
+
+<p>Additionally, if a druid has a high enough
+intelligence to learn an additional
+language, the following languages
+are available to them: aquan, auran,
+elf, fey, giant, gnome, sylvan and terran.
+The druid must have lived in or near a
+community of those whose language they
+seek to learn.</p>
+
+<h5 id="druid_nature_lore">NATURE LORE (WISDOM)</h5>
+Druids are connected to the forces of nature. They mystically coexist with their
+environment, gradually becoming a larger part of it. This
+relationship imparts to them a specialized knowledge of the
+wilds. A druid can identify plants and animals with perfect
+accuracy in the type of environment where the druid was
+trained or currently lives. In unfamiliar environments, the
+druid must succeed at a wisdom check to successfully use
+this ability.
+<p>This identification ability allows the druid to determine
+the species of a plant or animal and the special qualities or
+abilities of the species. The druid can also determine whether
+water is safe or dangerous to drink. Additionally, druids can
+find shelter and forage for food. A druid always succeeds in
+finding basic shelter and enough food for individual daily
+sustenance. If the druid wishes to support additional people,
+they must spend 6 hours hunting and gathering to produce
+enough food and water to feed 2-8 people for a day. If the
+druid wishes to feed or shelter a larger group of people than
+the die indicate, a successful wisdom check is necessary.
+If successful, the druid must spend an additional 6 hours
+gathering food to feed and water an additional 2-8 people. A
+third attempt to gather food can be made. A wisdom check
+at -4 is made but if successful, another 6 hours of searching
+can feed an additional 1-4 people. This additional effort
+allows the druid to gather food and water for up to 5-20
+creatures total. The druid can only hunt and forage for food
+three times per day.</p>
+
+<h5 id="druid_spells">SPELLS</h5>
+A druid casts divine spells. The spells available are
+listed on the druid spell list. Each druid can cast a limited
+number of spells from each spell level per day. The Cleric and
+Druid Spells Per Day Table (pg 28) shows the number of spells
+per day a druid may cast for each spell level. Druids prepare and
+cast spells by praying for them. This process is covered in greater
+detail in the Magic section.
+
+<h6>BONUS SPELLS</h6>
+High wisdom indicates a greater divine connection or spiritual connection.
+Druids with a high wisdom gain bonus spells.
+If they have a wisdom modifier of +1 or higher they recieve an extra 1st level spell.
+  If the wisdom modifier is +2 or higher, they recieve an extra second level spell and so on.
+  Bonus spells can only be aquired if the cleric is at a high enough level to cast them. Bonus spells are cumulative.
+
+  <h5 id="druid_resist_elements">RESIST ELEMENTS</h5>
+  At 2nd level, druids gain a +2 bonus to
+  saving throws against fire, water, earth, air, cold and lightning
+  attacks.
+
+    <h5 id="druid_woodland_stride">WOODLAND STRIDE</h5>
+    At 3rd level, druids gain the ability
+    to move through natural thorns, briars, overgrown areas
+    and similar terrain at normal speed and without suffering
+    damage or other impairment. When doing so, druids leave
+    no trail in the natural surroundings and cannot be tracked.
+    However, thorns, briars and overgrown areas that are
+    enchanted or magically manipulated to impede motion still affect druids.
+
+
+    <h5 id="druid_totem_shape">TOTEM SHAPE</h5>
+  <p> At 6th level, druids gain the spell-like ability
+    to change into a small or medium-size animal and back again
+    once per day. This ability operates like the spell polymorph
+    self. Upon attaining this ability, a druid must choose a totem
+    shape. The selection is permanent, and cannot be changed.
+    Each time a druid uses this ability, the character regains 1d4
+    hit points.</p>
+    <p>    At 7th and 8th levels, the druid gains a new totem shape. Each
+        shape can be assumed once per day. At 12th level, the druid
+        gains the ability to take the shape of a large version of one of the
+        previously chosen totem forms. This large form can be assumed
+        once per day, and the druid can decide between the three forms
+        each time this ability is used. When assuming the large version
+        of a totem form, the druid heals 5d8 hit points. At 15th level,
+        the druid can take a totem shape twice per day and at 18th level,
+        three times per day.</p>
+
+  </body>
+</html>
