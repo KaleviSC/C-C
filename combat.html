@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+      table,th,td{
+        border: 1px solid black;
+      }
+      div.spelltable {
+        float:left;
+      }
+      div.box {
+        border: 5px solid black;
+        margin-left:auto;
+        margin-right:auto;
+        background:lightblue;
+      }
+      tr:nth-child(6n-1) td, tr:nth-child(6n-2) td, tr:nth-child(6n-3) td {
+    background: #cccccc;
+  }
+  div.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75em
+}
+    </style>
+    <meta charset="utf-8">
+    <title>Castles & Crusades Combat Rules</title>
+  </head>
+  <body onload="myFunction()">
+    <div class="box">
+      <h1 style="text-align:center"><a href="main.html">Castles & Crusades</a></h1>
+    </div>
+<div class="blocktext">
+
+    <p>
+      <a href="dwarf.html">Races</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="assassin.html">Classes</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="clericspells.html">Spell Lists</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="spells.html">Spells</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="armaments.html">Equipment</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="#">Advantages</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="combat.html">Da Rulz</a></p>
+
+    <b>Rules: </b>
+<a href="combat.html">Combat Rules,</a>&nbsp;&nbsp;
+<a href="magic.html">Magic Rules,</a>&nbsp;&nbsp;
+<br>
+<br>
+
+<h2 style="text-align:center">Combat Rules</h2>
+      <ul style="list-style-type:none">
+
+<li> <a href="#surprise">1. Surprise</a> </li>
+<li> <a href="#initiative">2. Initiative</a></li>
+<li> <a href="#combat_actions">3. Combat Actions</a></li>
+<li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#attack">3.1 Attack</a> </li>
+<li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#cast_a_spell">3.2 Cast a Spell</a> </li>
+<li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#move">3.3 Move</a> </li>
+<li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#use_an_ability">3.4 Use an Ability</a> </li>
+<li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#use_an_item">3.5 Use an Item</a> </li>
+<li> <a href="#movement_in_the_combat_round">4. Movement in the Combat Round</a></li>
+<li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#charging">4.1 Movement in the Combat Round</a></li>
+<li> <a href="#melee_combat">5. Melee Combat</a></li>
+<li> <a href="#ranged_combat">6. Ranged Combat</a></li>
+<li> <a href="#unarmed_combat">7. Unarmed Combat </a></li>
+<li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#grappling">7.1 Grappling </a></li>
+<li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#pummeling">7.2 Pummeling </a></li>
+<li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#overbearing">7.3 Overbearing </a></li>
+<li> <a href="#touch_attack">8. Touch Attack </a></li>
+<li> <a href="#situational_modifiers">9. Situational Modifiers </a></li>
+<li> <a href="#armor_class">10. Armor Class </a></li>
+<li> <a href="#combat_maneuvers">11. Combat Maneuvers </a></li>
+<li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#dodge">11.1 Dodge </a></li>
+<li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#disengaging_from_combat">11.2 Disengaging from Combat </a></li>
+<li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#disarm">11.3 Disarm </a></li>
+<li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#evade">11.4 Evade </a></li>
+<li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#flank_attack">11.5 Flank Attack </a></li>
+<li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#rear_attack">11.6 Rear Attack </a></li>
+<li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#twf">11.7 Two Weapon Fighting </a></li>
+<li> <a href="#hp">12. Hit Points </a></li>
+<li> <a href="#damage">13. Damage </a></li>
+      </ul>
+
+
+
+
+<h3 id="surprise">Surprise</h3>
+Before combat begins, the CK determines if one or the other
+party is surprised. Those that are surprised get no action.
+After the surprise round, combat proceeds normally.
+
+<p>If a party can be surprised, a wisdom attribute check
+is made by the individual in the group with the best chance of
+succeeding at it, or by each member of the group individually. If
+the check is successful, that party or individual is not surprised.
+Failure indicates surprise.</p>
+
+<p>If a party is well hidden or camouflaged and awaiting a group of
+poorly perceptive orcs on a brightly lit road, the Castle Keeper
+may decide to penalize the wisdom check for the orcs. In general,
+the bonus or penalty should remain within a range of -5 to +5,
+although it might be greater in extraordinary situations.</p>
+
+<h3 id="initiative">Initiative</h3>
+The order of action in a combat round is determined by an
+initiative roll. Every creature or character participating in the
+combat round rolls a d10 to determine their initiative each
+round. Those with the highest roll take their action first, and
+the actions of others descend from there. In the case of a tie,
+the one with the highest dexterity goes first. In the case of equal
+dexterity, a simultaneous action occurs.
+<p>This method of establishing initiative may seem chaotic at
+times, especially with large groups of creatures or characters. In
+those cases, the Castle Keeper may find it necessary to require
+a group initiative instead, with the winning party acting before
+anyone in the opponent party.</p>
+
+<p>There is one exception to initiative: when a creature uses
+a weapon with a reach of greater than 10 feet against an
+opponent with a weapon with less than a 6 foot reach, or when
+a large creature is fighting a medium or smaller sized creature.
+In the first round only, the creature with the longer reach or
+larger size is allowed to attack first, even if the creature with the
+shorter reach or smaller size won the initiative roll. This rule
+only applies if the creature with the shorter reach or smaller
+creature approaches within ten feet. Such action counts as the
+action for that round for the larger creature or the one with the
+longer weapon.</p>
+
+<h3 id="combat_actions">Combat Actions</h3>
+In a combat round, characters can perform a wide variety of
+actions. Every possible action, however, can be categorized in one
+of the five types of actions that may be performed during combat,
+which all have a chance of failure. The five possible actions are
+attack, cast a spell, move, use an ability or use an item.
+
+<h4 id="attack">Attack</h4>
+A character or monster is allowed one attack each round
+unless they possess a special ability allowing them to exceed the
+limitation. Attacks include melee attacks, either armed with a
+weapon or unarmed, and ranged attacks with a missile weapon.
+An attack allows a character or monster to move up to one-half
+their movement rate. Moving farther than one-half movement
+rate negates the ability to make an attack.
+
+<h4 id="cast_a_spell">Cast a Spell</h4>
+A character or creature is allowed to cast one spell each round.
+Some spells require two or more rounds to cast, in which case
+the character must wait until the following round for the effect
+of the spell to take place. The magic section fully details how
+spells are cast and when they take effect. A character may not
+move any distance and cast a spell in the same round unless the
+spell description states otherwise.
+
+<h4 id="move">Move</h4>
+If no other action is taken, a character or monster can walk
+a distance equal to their full movement rate. Full movement
+also includes jogging (twice the normal move rate) and running
+(quadruple the normal move rate).
+
+<h4 id="use_an_ability">Use an Ability</h4>
+A character or monster may perform one class or racial ability
+each round. Some abilities, like spells, take more than one
+round to complete. Some monsters can perform more than one
+ability per round. Ability may involve movement, but in most
+cases the movement will not exceed the normal movement rate.
+Otherwise, the Castle Keeper retains discretion as to whether
+any ability use involves movement.
+
+
+<h4 id="use_an_item">Use an Item</h4>
+An item that is carried and readied can be used. The most
+common actions in this category are using or activating a magic
+item or piece of equipment. Such actions include, but are not
+limited to, drinking a potion, using a wand, casting a spell from a
+scroll, or casting a grappling hook. In most cases, no movement
+will be involved or allowed when using an item. Readying an
+item is not difficult, as long as it is easily accessed. Usually, the
+item must be on a belt or hanging from a pack, and readying it
+should not take more than a few seconds. Whereas, if an item
+is in a backpack, it would take at least a round to take off the
+pack, dig through it, and retrieve the item. The Castle Keeper
+and players must use common sense in deciding whether an item
+is readily available. In some cases, the Castle Keeper may require
+the players to indicate on their character sheets which items are
+readily available or how and where an item is being carried.
+
+
+<h3 id="movement_in_the_combat_round">Movement in the Combat Round</h3>
+
+Once initiative or surprise is determined, each character
+or monster involved in combat is allowed an action. One
+allowed action is movement. Movement, like the combat
+round, is an abstraction. It is a manner of establishing
+the distance that can be moved in a given period of time.
+Movement can be in a straight line, a curve or around
+a corner. Base movement rates are listed in each racial or
+monster description. The listed rate is the distance in feet
+that can be moved in one combat round. If encumbered,
+movement is reduced as described in the encumbrance
+section. Movement can be increased by jogging (double the
+movement rate) or running (quadruple the movement rate).
+Drop all fractions when figuring movement rates (minimum
+of 1 foot). To translate the movement rate into inches, hexes,
+squares or centimeters, divide the movement rate by 5.
+
+<p>An attacker can move one-half their movement rate and still
+attack. No attack is allowed if a character exceeds one-half
+their movement rate. The only exception to this rule is when
+a charge is attempted. Charging allows for an attack and full
+movement, but the special rules for charging apply. The Castle
+Keeper has the option of reducing the movement rate due to
+terrain, obstacles, injuries or other circumstances. Generally,
+the movement rate should not be reduced by more than
+three-fourths (0.75). The Castle Keeper should always allow a
+character to move at least 5 feet in a combat round, unless the
+character is restrained or otherwise unable to move.</p>
+
+
+<h4 id="charging">Charging</h4>
+Charging is a special, movement-based combat maneuver.
+When charging, a character precedes a melee attack by jogging
+or running, with the intent of using the gained leverage and
+momentum to inflict greater damage on a defender. A successful
+charge attack results in a +2 bonus to damage inflicted, but
+imposes a -4 penalty to the attacker’s armor class for the entire
+combat round. The charge must be announced prior to the
+character moving and before iniative is rolled.
+
+<p>When charging, a character is considered to be jogging
+or running. The character must minimally move the full
+distance of their normal movement rate. The charge must be
+in a straight line. The total distance moved while charging
+cannot exceed the character’s jogging movement rate. For
+example, Una the elf announces that she is going to charge
+an orc standing across the battlefield. Una’s base movement
+is 30 feet, and thus, her jogging rate is 60 feet. As long as the
+orc is at least 30 feet away, but no more than 60 feet, Una
+may attempt the charge maneuver.</p>
+
+<p>When charging, the attacker suffers a -4 penalty to armor class
+for the combat round. The penalty applies even if the charge
+attack is not successful. The penalty also applies if the defender
+attacks first due to size or weapon length, or by ranged attack.
+If a defender scores a successful hit upon a charging character,
+the charge is negated. If a charge is negated, the attacker is still
+allowed their movement and attack, but a successful hit does
+not deal any extra damage.</p>
+
+
+<h3 id="melee_combat">Melee Combat</h3>
+Melee occurs when two creatures engage in hand-to-hand
+combat. The attacker rolls a d20 and adds the basic to hit bonus
+plus any strength modifier. A monster’s basic to hit bonus is equal
+to its total number of hit dice (a 3d8 hit dice creature adds a +3).
+If the total is greater than or equal to the defender’s armor class,
+the attacker has successfully hit the defender and inflicts damage
+as determined by the weapon used. Unarmed combat is a type of
+melee attack, but it is addressed separately below
+
+<p>It is important to note that a melee attack, like the combat
+round and movement, is also an abstraction. Though a character
+usually makes only one attack per round, it should not be
+considered a single swing. A melee attack involves a series of
+parries and thrusts, along with attack and defensive maneuvers
+that sometimes result in damage to the defender. The damage
+could be from one blow or could be representative of a series of
+blows or fatigue.</p>
+
+<p>There are many other bonuses and penalties which may affect
+a melee attack to hit roll. These include, but are not limited to,
+racial modifiers, magic weapon bonuses, class ability modifiers,
+spell effect modifiers, and situational modifiers.</p>
+
+PAGE 180. PHB: Damage from melee
+weapons is adjusted by the strength modifier, magical weapon
+bonuses, and other factors or adjustments if applicable.
+
+
+<h3 id="ranged_combat">Ranged Combat</h3>
+
+Ranged combat is much like melee combat except it occurs when
+an attack is made with a missile weapon against a defender some
+distance away. Dexterity is the attribute that modifies a ranged
+attack to hit roll. If the total of the d20 roll plus the character’s basic
+to hit bonus and dexterity modifier is greater than or equal to the
+defender’s armor class, the attacker has successfully hit the defender
+and inflicts damage as determined by the missile weapon used.
+
+<p>There are two types of ranged weapons: thrown and propelled.
+Thrown weapons are those whose momentum are dependent
+upon the strength of the character or monster throwing it.
+These include javelins, daggers, spears and the like. Propelled
+weapons are those whose momentum and thrust are dependent
+on the mechanism which propels them forward. This includes
+crossbows, stones from a sling and similar devices. While a
+character’s dexterity modifier is added to all ranged to hit rolls,
+a character’s strength modifier is only added to the damage of
+thrown weapons, not propelled weapons</p>
+
+
+<p>Ranged weapons also have range increments, and they
+have a maximum effective distance equal to three times
+the listed range increment as detailed in the equipment list.
+The listed range increment is considered to be close range.
+Twice the range increment is medium range and three times
+the increment is long range. Medium range results in a -2
+penalty to the ranged attack roll, and long range results in a
+-6 penalty to the attack roll.</p>
+
+
+<p>Ranged weapons that miss their target continue on their path
+and can potentially hit another target within close range. If
+the target of the attack is missed, the projectile continues in a
+straight line and can hit anything in its path. For each ten feet
+traveled within close range, the archer should roll a to hit roll
+again, but the attacker accrues a -1 penalty for every 10 feet
+beyond the original target. The exception to this rule is that
+bolts fired from a crossbow continue up to long range, although
+the medium and long range modifiers still apply.</p>
+
+<h3 id="unarmed_combat">Unarmed Combat</h3>
+
+Unarmed combat is similar to armed combat, only the attacker
+is not using a melee weapon, but natural weapons, such as claws,
+hands, fangs or even the whole body. Many monsters employ
+unarmed melee attacks, as do monk characters. In most cases,
+the success of these attacks are determined as with a normal
+melee attack. The attacker rolls a d20 and adds the basic to hit
+bonus plus any strength modifier. A monster’s basic to hit bonus is
+equal to its total number of hit dice (a 3d8 hit dice creature adds
+a +3). If the total is greater than or equal to the defender’s armor
+class, the attacker has successfully hit the defender and inflicts
+damage as determined by the class ability or monster description.
+
+<p>There are also special unarmed attacks of an entirely different
+nature and effect: grappling, pummeling, overbearing and touch
+attacks. Each type follows the same basic principle but with
+different modifications to the to hit roll and damage inflicted.</p>
+
+
+<h4 id="grappling">Grappling</h4>
+Grappling involves grabbing and holding a defender, as with
+classical wrestling or a snake constricting its body around its
+prey. Grappling is directed at holding an opponent and subduing
+them. The attacker rolls a d20 and adds any strength modifier
+and his Bonus to hit (BtH).
+<p>The armor class of a defender in an overbearing attack is
+different than normal. A defender without strength as a
+prime has a standard AC of 12. A defender with strength as
+a prime has a standard AC of 18. Armor has little effect on
+the capacity to defend against this type of attack and is not
+included. The AC is modified by the strength, the dexterity,
+and the size difference between the two opponents. If an
+attacker is larger than the defender apply a +2 to AC for
+every size category larger than the defender’s size, and a -2
+for every size category smaller.</p>
+
+<p>Should an attack be successful, the defender is held and cannot
+act except to attempt to break the hold. The defender is
+considered prone and defenseless. The defender can break the
+hold by making his own successful grappling attack.</p>
+
+<h4 id="pummeling">Pummeling</h4>
+Much like boxers or martial artists, pummeling involves the
+use of fists, feet, knees, elbows or other body parts to inflict
+damage on an opponent with the intention of knocking them
+out or otherwise incapacitating them. The attacker rolls a d20
+to hit, adding any strength modifier plus, his BtH, and any other
+modifier the Castle Keeper deems appropriate. If the total equals
+or exceeds the defender’s armor class, the pummeling inflicts 1-2
+hit points of subdual damage. Damage is modified by strength.
+
+<h4 id="overbearing">Overbearing</h4>
+This type of attack is used to knock an opponent down. This
+is a tactic used in wrestling and other types of hand-to-hand
+combat, as well as when an animal charges and knocks someone
+over. The attacker rolls a d20 to hit and adds any strength
+modifier or other modifier that the Castle Keeper deems fit. The
+Castle Keeper may or may not deem the basic to hit bonus an
+appropriate modifier.
+
+<p>The armor class for overbearing attacks is determined in the
+same fashion as for grappling attacks, using the defender’s
+strength, BtH or hit dice, and size difference as modifiers.
+However, unlike grappling attacks, there is one additional
+modifier. The defender’s BtH also modifies the armor class in
+an overbearing attack.</p>
+
+
+<p>If a hit is successful, the defender is knocked prone for the
+remainder of that round. An attacker cannot knock over a
+defender two sizes larger. In addition, the defender takes 1-2
+points of subdual damage.</p>
+
+<p>An attacker attempting to overbear suffers a -2 penalty to armor
+class because they are more exposed than usual. The penalty
+remains to their armor class for the combat round.</p>
+
+
+<h3 id="touch_attack">Touch Attack</h3>
+A touch attack is one in which an attacker is simply trying to
+touch an opponent. This often occurs with spells that require
+a touch to be successful. With a touch attack, a standard
+armor class of 10 is used for all defenders, adjusted only by
+dexterity of the defender and special modifiers resulting from,
+for example, magic items or spells. Monsters use the base 10
+AC with no modifiers.
+
+<h3 id="situational_modifiers">Situational Modifiers</h3>
+
+<p>Situational modifiers are somewhat nebulous and, for the most
+part, those that the Castle Keeper deems appropriate. There are
+often situations for which it is impossible to set a rule, or would
+involve such complex rules as to fill up an entire tome. In these
+instances, the Castle Keeper must use reason, common sense or
+narrative development to determine what modifier is applied to
+the to hit roll. For example, should a fighter, after a long night
+of carousing, be swinging across a crowded tavern clinging to a
+fraying rope with one hand and a sword in the other, decide to
+take a swing at a plump gnome merchant as he passes over it,
+the Castle Keeper must decide upon the appropriate modifier to
+the to hit roll (or an attribute check to determine if it is even
+possible to make the attack).</p>
+
+
+<p>In general, combat to hit modifiers can be broken down into
+three categories: easy, difficult and heroic. For tasks that are
+easy, up to a +/-5 modifier should be imposed. Difficult tasks
+would range from +/- 6 to 10, and heroic acts would range
+from +/- 11 or above. The instance described above may seem
+ridiculous, but players attempt all manner of actions with their
+characters - something which should be encouraged. However,
+the Castle Keeper is left with the task of deciding the modifier
+to be applied to a situation. What the fighter in the example
+above is attempting is not heroic, but it most certainly is not
+easy. In this instance, the Castle Keeper should probably err on
+the high side of difficult since the fighter is inebriated. A -10 to
+the attack roll would not be unreasonable.</p>
+
+<p>Some situational modifiers can be applied with regularity. These
+are listed below and can be used to help in making decisions
+about other unusual situations. Concealment includes those
+circumstances where nothing physically blocks an attack, but
+there is something that interferes with the attacker’s accuracy.
+The other modifiers should be self explanatory. The modifiers
+are cumulative. In all instances, attackers must know of a
+defender’s presence, though not their exact location. Also, the
+Castle Keeper should add to this list and keep track of decisions
+which are made in the game in order that they can be made
+with some regularity and consistency.</p>
+
+<table>
+  <tr>
+    <th>SITUATIONAL COMBAT</th>
+    <th>MODIFIERS</th>
+  </tr>
+  <tr>
+    <td>Defender prone or blind</td>
+    <td>+5</td>
+  </tr>
+  <tr>
+    <td>Defender prone and defenseless</td>
+    <td>+10</td>
+  </tr>
+  <tr>
+    <td>Defender at lower elevation</td>
+    <td>+1</td>
+  </tr>
+  <tr>
+    <td>Defender stunned or cowering</td>
+    <td>+2</td>
+  </tr>
+  <tr>
+    <td>Defender invisible or attacker blind</td>
+    <td>-10</td>
+  </tr>
+
+  <tr>
+    <td>Melee attack from mount or unstable platform</td>
+    <td>-2</td>
+  </tr>
+  <tr>
+    <td>Ranged attack from mount or unstable platform</td>
+    <td>-4</td>
+  </tr>
+  <tr>
+    <td>Defender 1/4th concealed (light fog) </td>
+    <td>-2</td>
+  </tr>
+  <tr>
+    <td>Defender 1/2th concealed (dense fog)</td>
+    <td>-4</td>
+  </tr>
+  <tr>
+    <td>Defender 3/4th concealed (near darkness) </td>
+    <td>-6</td>
+  </tr>
+  <tr>
+    <td>Defender completely concealed </td>
+    <td>-10</td>
+  </tr>
+</table>
+
+<h3 id="armor_class">Armor Class</h3>
+
+<p>Armor class is representative of a defender’s ability to avoid
+damage. Armor class results from a combination of armor and
+dextrous avoidance of attacks, and even an ability to absorb the
+shock of a damaging blow or roll with it. Armor class takes into
+account an active defense (aware of the attacker), the armor
+worn and a general ability to withstand or avoid attacks. It does
+not represent armor alone. However, for game purposes, armor
+class is the primary determinate of armor class as it is the most
+easy to quantify.</p>
+
+
+<p>Armor class begins at 10. A person wearing normal clothing has
+a 10 armor class. Armor class can increase as much as modifiers
+allow. In rare cases, modifiers can result in an armor class less
+than 10, though never below 1. The following rules should
+be taken into account when determining the armor class of a
+defender. It is not an exhaustive list and the Castle Keeper is
+encouraged to develop their own adjustments as needed.</p>
+
+
+<h4>Armor</h4>
+Each armor’s adjustment is described in the equipment list.
+Chain mail, for example, has a +5 adjustment to armor class.
+This gives the individual wearing it a 15 armor class (10+5).
+
+<h4>Shields</h4>
+Every shield has a +1 modifier to armor class, but the size of
+the shield determines how many opponent’s the +1 modifier
+applies against. Small shields only offer the adjustment against
+one attacker, medium shields against two attackers and large
+shields against three attackers.
+
+<h4>Dexterity</h4>
+Dexterity modifies a character’s armor class if that character
+can physically react to an attack. Characters lose their dexterity
+modifier when they are surprised, unaware of an attacker or
+when they are restrained or otherwise rendered immobile.
+Dexterity does not apply, for example, when a character is
+attacked from the rear.
+
+<h4>Cover</h4>
+Characters will often take cover behind objects such as tables,
+doors, chairs or other structures in order to gain some protection.
+Cover confers an armor class bonus to the character as follows:
+
+<table>
+  <tr>
+    <th>COVER</th>
+    <th>AC ADJUSTMENT</th>
+  </tr>
+  <tr>
+    <td>1/4 cover</td>
+    <td>+2 AC</td>
+  </tr>
+  <tr>
+    <td>1/2 cover</td>
+    <td>+4 AC</td>
+  </tr>
+  <tr>
+    <td>3/4 cover</td>
+    <td>+6 AC</td>
+  </tr>
+  <tr>
+    <td>Full cover</td>
+    <td>+10 AC</td>
+  </tr>
+</table>
+
+Although cover is primarily used as protection against missile
+or ranged weapons, it can also be used in melee combat. For
+example, when the wizard Anaximorus finds her spells useless
+against a golem, she decides to jump behind a large column in
+an attempt to avoid being smashed by its massive fists. This
+action offers 3/4 cover from the golem’s attacks. When cover
+is used in melee attacks though, the cover applies to both the
+attacker and defender until one or the other move out from
+behind it. In some cases, the Castle Keeper may rule that the
+character seeking cover may not attack.
+
+
+<h4>Magic</h4>
+There are numerous other modifiers that can be applied to
+armor class. Spells, magic armor and rings, or other unique
+items and situations can increase or decrease armor class.
+A character’s condition, such as being stunned poisoned, or
+fatigued may affect the armor class. In general, magical rings,
+robes or other protective devices and spells affect armor class
+for touch attacks. Magical armors do not affect touch attacks.
+
+<h4>Situational and Circumstance</h4>
+There are innumerable situational modifiers which can also
+adjust armor class. These are too numerous to list, but the
+Castle Keeper should always bear in mind the current situation
+or circumstances. For example, a rusted suit of armor may
+suffer a -1 to its overall armor class adjustment. It is, as always,
+incumbent on the Castle Keeper to use common sense when
+making these adjustment. Always err on the side of safety. It is
+a game, after all.
+
+<h3 id="combat_maneuvers">Combat Maneuvers</h3>
+<p>Players try all manner of inventive actions during combat,
+from using chairs as shields, trying to dodge opponent’s blows
+or running haphazardly away from some monstrous beast. It is
+impossible to enumerate and describe all the possibilities and
+it is unproductive to try and do so. These generally fall into a
+category of combat maneuvers.</p>
+
+<p>Some of the more common combat maneuvers and their
+effects are listed and described below. These rules can be
+considered optional as they are not necessary to gameplay.
+They are provided to allow the Castle Keeper and players
+more options in combat and to introduce the concept of
+amending and adding rules to fit a group’s style of play. They
+should be introduced slowly and with practice to insure that
+they meld with the style and tempo of play desired by both
+the players and Castle Keeper.
+</p>
+
+
+<h4 id="dodge">Dodge</h4>
+In this case, a character can dodge up to three attacks in a round
+that originate from an attacker(s) which they are facing and are
+aware of. If dodging, the character sacrifices their action in that
+round. They do not need to roll initiative, but must announce
+their intention before the round begins. The character cannot
+attack, cast spells, move or use an ability or item. The character
+gains a +2 to their armor class while dodging. A character can
+dodge every round should they desire.
+
+<h4 id="disengaging_from_combat">Disengaging from Combat</h4>
+
+Disengaging from combat is a dangerous maneuver since it
+exposes the character to attacks, but it automatically puts
+distance between the disengaging party and their opponent. The
+player must announce that he is disengaging at the beginning of
+the round. The disengaging character does not roll initiative. If
+disengaging a character can take no other action. The character
+is allowed a movement as defined below. Player characters,
+monsters and non-player characters can disengage from combat.
+
+<p><b>Hasty Disengagement:</b>  is one in which the character or monster
+attempts to leave combat and expends all effort to do so. A
+character disengaging hastily may move as far as possible up to
+their maximum running distance, but they suffer a -2 to armor
+class and their opponent gets an attack against them as they
+run away. This is a free attack and does not count against the
+opponent’s other action in the round, although the opponent
+may not make a second attack against the fleeing character. The
+armor class adjustment lasts throughout the combat round and
+applies to every attack against the fleeing character.
+</p>
+
+
+<p> <b>Fighting Disengagement:</b> is a more carefully executed
+withdrawal from combat. By performing a fighting
+disengagement, the character moves one-half their movement
+rate or less away from their opponent and they can disengage
+from combat. The character suffers no penalty to armor class,
+but they cannot take any other action in the round.
+In the round following the disengagement the character
+or monster has put distance between theirselves and their
+opponent. </p>
+
+
+<h4 id="disarm">Disarm</h4>
+
+A fighter, ranger, knight, rogue, assassin, cleric and paladin can
+disarm an opponent. The character must successfully hit an
+armor class equivalent of 18 plus the hit dice or level of the
+defender to successfully disarm them. For example, a ranger
+would need to hit an armor class of 23 to disarm a 5 hit dice
+creature or 5th level opponent. The defender receives a dexterity
+bonus to this armor class, if applicable.
+
+<h4 id="evade">Evade</h4>
+This maneuver is a desperate attempt to avoid being hit and
+involves using all one’s energies to dodge and parry blows but
+remain engaged in combat. If evading the character sacrifices
+their action in that round. They do not need to roll initiative,
+but must announce their intention before the round begins.
+The character cannot attack, cast spells, move or use an ability
+or item. The character doing this is allowed to evade one
+opponent they are facing. Evade confers a +4 bonus to armor
+class for that round.
+
+<h4 id="flank_attack">Flank Attack</h4>
+The flank attack takes place to the left or right rear side of a
+defender. Flank attacks should be used consistently for monsters
+and characters alike. The defender may or may not be aware of
+the attack, but in any case, is less capable of defending against
+the flank attack than those from the front. A flank attack
+confers a +1 bonus to hit.
+
+<h4 id="rear_attack">Rear Attack</h4>
+An attack to the rear of an opponent gives the attacker a +2
+bonus to hit. The rogue and assassin do not get this in addition
+to their back attack bonus, as it is already considered in their
+class abilities.
+
+<h4 id="twf">Two Weapon Fighting</h4>
+<p>At some point, characters will attempt to fight with a weapon in
+both hands. This is a difficult skill to master, and it takes much
+experience to do it well (see the monk class). When using two
+weapons, the player must designate which hand is used for the
+primary attack and which is the off hand attack. Typically, this
+is determined by the handedness of the character, either right
+handed or left handed.</p>
+<p>The character is allowed to swing with both weapons, thus
+gaining two attacks in a single round, but the attack with the
+primary hand is at -3 and the attack with the off hand is at
+-6. These penalties are affected by the character’s dexterity
+modifier. The character’s strength modifier only applies to
+damage inflicted.</p>
+
+<p>A monk may use the two-weapon fighting rule to gain a second
+hand-to-hand attack before the character reaches 6th level. If the
+monk does so, both attacks suffer the penalties for two-weapon
+fighting and the secondary attack inflicts normal fist damage of
+1d2 hit points. When a monk reaches 6th level, the character
+gains a secondary hand-to-hand attack. A monk’s secondary
+hand-to-hand attack ability does not suffer any penalty for twoweapon
+fighting and it inflicts the damage in the monk special
+ability chart. But, if a monk at any level fights with a weapon in
+one hand and attacks with his other hand, whether a primary
+or secondary attack, the monk suffers the standard penalties
+for two-weapon fighting and follows the preceding rules in this
+paragraph as to secondary attack damage.</p>
+
+<h4 id="hp">Hit Points</h4>
+Hit points represent the amount of damage, physical and
+mental, a character, non-player character or monster can take
+before passing out or dying. A character’s hit points are a mere
+abstraction and are not a numeration of the character’s physical
+being. It is generally a representation of the overall health of the
+individual. The higher the hit points, the healthier the individual.
+<p>[...]</p>
+<p>Hit points for the classes are acquired by level. At each level,
+the hit die type is rolled and added to the previous level’s total.
+The constitution modifier is added or subtracted from this
+roll. At 10th level and above, all classes acquire hit points at a
+specified rate. Constitution modifiers are added to or subtracted
+from this. In all cases, a character gains at least 1 hit point for
+each level advanced.</p>
+<p>Hit points can be reduced by weapons, magical spells,
+exhaustion, and poisons, amongst other things. These are
+detailed in the following section. Once damage is taken, it must
+be healed for the hit points to be restored to their maximum
+level. Hit points can never be healed beyond what they were
+before taking damage.</p>
+<p>In general, hit points heal at a rate of one point per day and only
+if the character is resting, well fed, kept warm and the wounds
+being tended to. After seven days, the rate of healing increases
+to include the constitution bonus, if any. After 14 days, the
+rate of healing doubles and after thirty days, it triples. Rates of
+healing can be adjusted by magical healing, herbs, diet, level of
+care or other factors the Castle Keeper deems applicable.</p>
+<p>In general, when 0 hit points is reached, the character or monster
+passes out. They are not dead, but rather incapable of acting
+while passed out due to blood loss and physical or mental damage.
+The character or monster is unable to act and is unconscious or
+gravely wounded. Those so wounded, if still conscious, can do
+little more than crawl from the battlefield or call out for help.
+Those with 0 hit points recover consciousness in 1d6 hours,
+after which they can move at ½ their normal move rate, but still
+cannot participate in combat, cast spells, turn undead or any
+strenuous or demanding action. The full effect of magical healing
+of characters reduced to 0 hit points is immediate.</p>
+
+<p> <b>At -1 to -6 hit points,</b> the character or monster is unconscious
+and grievously wounded. They require bed rest to recover.
+Unless magically healed a character so wounded must rest 24
+hours before the process of healing begins. With most magical
+healing, the character’s hit points can only be returned to 0,
+after which healing proceeds normally.
+For example, a knight is struck by a club from an ettin and
+reduced to -1 hit points. Before healing begins, the knight must
+wait 24 hours. However, a cleric of goodly intent decides to
+share the grace of their deity with the knight and cast a cure
+light wounds on the knight. The cure is for 8 hit points, but the
+knight is only brought back up to 0 hit points. However, healing
+can proceed as normal thereafter. </p>
+
+<p> <b>At -7 to -9 hit points,</b> the character or monster is mortally
+wounded and loses one hit point per round after reaching -7 hit
+points. Aid administered to the wounds stops the hit point loss.
+This takes at least one full round, during which no hit point is
+lost. After 24 hours have passed, the normal healing process as
+described for -1 to -6 hit points begins. </p>
+
+<p> <b>At -10 hit points death occurs immediately.</b> Only resurrection,
+reincarnation or bribes to the Castle Keeper can remedy death. </p>
+
+
+<h3 id="damage">Damage</h3>
+If a hit is successful, damage is assessed for the opponent and
+its hit points are reduced. Damage delivered from a blow by
+a weapon depends on the weapon being used or as described
+in the monsters description. Damage is applied immediately.
+If a character or monster dies as a result of damage inflicted,
+it gets no opportunity to swing, cast spells or anything else.
+There are several categories of damage that need examining.
+From this, the Castle Keeper should determine the type
+and nature of any damage inflicted on a character if not
+specifically described in the rules.
+<p>Damage takes its toll in a variety of ways. A sword cutting an
+arm, a mace crashing into a shield and bruising an arm or simply
+physical exertion during the course of a difficult or long combat.
+The Castle Keeper should not automatically assume that damage
+causes flesh to be shorn from limbs and bones crushed. Four
+points of damage to a 3rd level fighter could simply be bruising on
+the arm, a series of small cuts or exertion. Alternately, it could
+be a mortal blow that fells a character. In general, it is not wise
+to break bones, lop off limbs or inflict significant organ damage,
+as healing times for these types of wounds are significant and
+complete recovery often impossible. Being creative with the type
+of damage inflicted should enhance combat rather than detract
+from game play. Be sure to keep it that way.</p>
+
+<h4>Weapon Damage</h4>
+The amount of damage inflicted is determined by the type of
+weapon being used or natural weapons such as the claws of a
+lion, the fist of a golem or the beak of a hippogriff. Weapon
+damages are listed in the equipment chart. Damage from melee
+weapons is adjusted by the strength modifier, magical weapon
+bonuses, and other factors or adjustments if applicable. Natural
+weapons and their effects are described in the appropriate
+monster description or combat rule. Any modifications to
+damage are noted in the descriptions.
+
+<h4>Magic Damage</h4>
+Damage caused by spell effects are applied in the same manner
+as those by melee weapons or natural weapons. Special
+considerations are described in the appropriate spell. Of special
+note though, damage caused by illusions can be real. Though
+not real in a material sense, the viewer of the illusion believes
+the damage to be real and suffers psychic and mental shock as
+if it were real. The spell descriptions list the details of damage
+from illusions, but in general, it can be said that damage
+received from illusory attacks is, in reality, subdual damage and
+the characters follow all the rules for subdual damage with the
+following exception. Characters or monsters reduced to -10
+hit points by illusory damage die from the psychic shock to the
+system, which is too great to withstand.
+
+
+<h4>Subdual Damage</h4>
+<p>This type of damage is generally not fatal, though on occasion
+it can be. Subdual damage is more the bludgeoning one
+receives in a fist fight than the slashing, gashing bone breaking
+combat of swords and maces. It may hurt and even knock one
+unconscious, but rarely draws blood and usually results in
+damage that heals quickly.</p>
+<p>Subdual damage is usually caused in unarmed combat with
+natural weapons. However, many monsters use natural
+weapons that cause normal damage. If a monster’s attack
+causes subdual rather than normal damage, the monster
+description will note it. Otherwise, damage from monsters
+should be considered normal damage. A monk’s unarmed
+attack is normal damage, unless the monk chooses to subdue
+as if using a weapon.</p>
+<p>An attacker can use weapons to deliver subdual damage but it
+does so at varying rates. When being used for subdual, weapons
+inflict normal damage, but it is mostly temporary damage.
+Minimally, these weapons deliver one point of damage. All
+subdual damage delivers some normal damage. For every five
+points of subdual damage inflicted, one point is considered
+normal damage.</p>
+<p>Subdual damage heals faster than normal damage as it is
+not usually fatal. It heals at a rate of 1 hit point per every
+10 minutes. The normal damage inflicted as a part of subdual
+damage heals as previously described. At the Castle Keeper’s
+discretion, when a character reaches -10 hit points or more of
+subdual damage, they have taken severe enough bludgeoning
+damage to an internal organ to cause death or permanent
+incapacitation. Otherwise, they should be considered
+unconscious for 24 hours and do not begin healing until
+gaining consciousness.</p>
+
+<h4>Falling Damage</h4>
+<p>Falling damage occurs when a character or monster falls from
+a height of five feet or more. Falling can be very deadly and
+players should be made aware of the potential hazards of a fall
+prior to beginning a climb.</p>
+
+<p>If a character falls from a height of six to ten feet, a dexterity
+check must be made. If the check is successful, the person
+falling takes no damage. If the check is not successful, the
+person takes 1d6 points of damage. From heights greater
+than ten feet, damage accrues significantly. For every ten
+feet fallen, the number of d6 used for damage increases by
+one. The damage for each 10 feet fallen is cumulative. For
+example, if a character falls 18 feet, they take 1d6 damage
+for the first ten feet and 2d6 damage for the next 10 feet for
+a total of 3d6 damage. If a charcter were to fall from a height
+of 45 feet, they would take 1d6 damage for the first 10 feet,
+2d6 damage for the second 10 feet, 3d6 damage for the third
+10 feet, and 4d6 damage for the last 10 feet, for a total 10d6
+points of damage.</p>
+
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+      </body>
+    </html>
