@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+      table,th,td{
+        border: 1px solid black;
+      }
+      div.spelltable {
+        float:left;
+      }
+      div.box {
+        border: 5px solid black;
+        margin-left:auto;
+        margin-right:auto;
+        background:lightblue;
+      }
+      tr:nth-child(6n-1) td, tr:nth-child(6n-2) td, tr:nth-child(6n-3) td {
+    background: #cccccc;
+  }
+  div.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75em
+}
+    </style>
+    <meta charset="utf-8">
+    <title>Castles & Crusades Encumbrance Rules</title>
+  </head>
+  <body onload="myFunction()">
+    <div class="box">
+      <h1 style="text-align:center"><a href="main.html">Castles & Crusades</a></h1>
+    </div>
+<div class="blocktext">
+
+  <p>
+    <a href="dwarf.html">Races</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="assassin.html">Classes</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="clericspells.html">Spell Lists</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="spells.html">Spells</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="armaments.html">Equipment</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="heritagedwarf.html">Advantages</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="combat.html">Da Rulz</a></p>
+
+    <b>Rules: </b>
+<a href="combat.html">Combat Rules,</a>&nbsp;&nbsp;
+<a href="magic.html">Magic Rules,</a>&nbsp;&nbsp;
+<a href="encumbrance.html">Encumbrance Rules,</a>&nbsp;&nbsp;
+<br>
+<br>
+
+<h2 style="text-align:center">Encumbrance Rules</h2>
+
+
+<h3>Determining Encumbrance</h3>
+A character has an Encumbrance Rating equal to their strength
+score. This is then modified by the character’s prime attributes.
+If the character has either the strength or constitution
+attributes as prime, they may add 3 to their Strength Score
+to determine their Encumbrance Rating. If the character has
+both strength and constitution as prime, then they may add 6.
+This Encumbrance Rating is the total amount of Encumbrance
+Values the character can carry before being Burdened.
+
+<p>A character is considered Unburdened, Burdened, or Overloaded
+according to the amount of EV they are carrying. If the
+character is carrying less than their Encumbrance Rating in EV,
+then they are Unburdened. If they are carrying more than their
+Encumbrance Rating, but less than triple their ER then they are
+Burdened. A character that is carrying more than three times
+their Encumbrance Rating is considered Overburdened.</p>
+
+
+<h4>Effects Of Encumbrance</h4>
+The effects of carrying too much equipment are potentially
+hazardous to characters. Much care needs to be given to how
+much is being hauled around. The penalties to movement and
+attribute checks are listed on the chart.
+
+
+<table>
+  <tr>
+    <th>Encumbrance Category</th>
+    <th>Weight</th>
+    <th>Effect</th>
+  </tr>
+  <tr>
+    <td>Unburdened</td>
+    <td>Up to 1x ER</td>
+    <td>No Effect</td>
+  </tr>
+  <tr>
+    <td>Burdened</td>
+    <td>1x ER to 3x ER</td>
+    <td>-10 ft to character’s Move Score (minimum of 5 ft), +2
+to Challenge Level of all Dexterity Based Checks</td>
+  </tr>
+  <tr>
+    <td>Overburdened</td>
+    <td>More than 3x ER</td>
+    <td>Move reduced to 5 feet per round, Automatically
+fail all Dexterity Based Checks, Lose Dexterity
+bonus to AC</td>
+  </tr>
+</table>
+
+<h4>Worn and Capacity Objects</h4>
+<p>Items that are designed to carry and redistribute the weight and
+bulk of other items are called Capacity Items. Capacity Items can
+carry a number of items equal to their Capacity. Furthermore,
+a Capacity Item cannot carry any item whose EV is equal to or
+greater than it’s Capacity rating. So a Backpack, with a Capacity
+of 8, can carry up to 8 items whose EVs are 7 or less.</p>
+
+<p>Items that are carried in a Capacity item do not have their
+EV included in the character’s Encumbrance Total. Instead,
+the character only notes the EV of the Capacity item. So the
+character wearing an EV 2 Backpack that has a Bedroll (EV
+3), hammer (EV 2), 50 nails (EV 1), and one torch (EV 1)
+has five items in the Backpack (and thus has space for three
+more items). The character’s Encumbrance Rating is only
+increased by 2 when they carry the Backpack, ignoring the
+EVs of the items inside of it.</p>
+
+
+<h4>Coins</h4>
+There is no way to determine exact weights and encumbrance
+of coin. Use the following for a baseline. Each coin in C&C
+is roughly 1 ounce. This would make gold coins, as the metal
+is heavier, smaller than silver coins, whose metal is lighter.
+Every 16 coins is equal to a pound. However coins have
+almost no bulk to them, but may have weight. A single coin,
+or a pound of coins, has no appreciable EV. Ten pounds, or
+160 coins, is equal to 1 EV.
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </body>
+</html>
