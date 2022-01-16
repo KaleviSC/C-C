@@ -2,6 +2,84 @@
 <html lang="en" dir="ltr">
   <head> <!--- THIS IS A COMMENT--->
     <style>
+      @font-face {
+        font-family: TitleFont;
+        src: url('fonts/DinastyPersonalUseBold-rgqzA.ttf');
+      }
+      a {
+        font-family: Verdana;
+      }
+      .dropbtn {
+        background-color: transparent;
+        font-family: Verdana;
+        color: white;
+        font-size: 25px;
+        padding: 16px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .dropdown {
+        position: relative;
+        font-size: 25px;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        font-size: 25px;
+        background-color: Grey;
+        position: absolute;
+        background-color: none;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        font-size: 25px;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        font-size: 25px;
+        background-color: none;
+      }
+
+      .dropdown:hover .dropdown-content {
+        font-size: 25px;
+        display: block;
+      }
+
+      .dropdown:hover .dropbtn {
+        font-size: 25px;
+        background-color: none;
+      }
+      .dropdown:active .dropbtn {
+        font-size: 25px;
+        background-color: none;
+      }
+      .dropdown:link .dropbtn {
+        font-size: 25px;
+        background-color: none;
+      }
+      .dropdown:visited .dropbtn {
+        font-size: 25px;
+        background-color: none;
+      }
+      h1 {
+        font-family: TitleFont;
+        font-size: 120px;
+        color: White;
+        line-height: 100%;
+        position: relative;
+        bottom: 20px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: LightSkyBlue;
+      }
       div.box {
         border: 5px solid black;
         margin-left:auto;
@@ -20,49 +98,130 @@
       body {
         background-image: url('https://1.bp.blogspot.com/-dY1-V167Kjo/YZVr3gerlXI/AAAAAAAAgJo/Meeb-lyx_CAzIO346DYBMkV-B3H3PZuBwCLcBGAsYHQ/s1500/PH%2BTribute%2BResized.jpg');
       }
+      p {
+        font-size: 25px;
+        position: relative;
+        bottom: 500px;
+      }
+      a {
+        font-size: 25px;
+      }
       a:link {
-      color: black;
+        color: White;
+        text-decoration: none;
       }
       a:visited {
-      color: black;
+        color: White;
+        text-decoration: none;
+      }
+      a:hover {
+        color: White;
+        text-decoration: none;
+        text-shadow: 3px 3px 5px lightPink;
       }
       div.blocktext {
         margin-left: auto;
         margin-right: auto;
         width: 75em
-    }
-    .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-
+      }
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      }
       </style>
     <meta charset="utf-8">
     <title>Castles & Crusades</title>
   </head>
   <body>
-
-    <div class="box">
-      <h1 style="text-align:center">Castles & Crusades</h1>
+      <h1 style="text-align:center">Castles <br>&<br> Crusades</h1>
+    <a href="main.html"style="position: fixed; top: 17px;">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="dropdown">
+      <button class="dropbtn"; class="glow"; style="font-size:25px; position: fixed; top: 0px; left: 95px;">Races</button>
+      <div class="dropdown-content" style="position: fixed; top: 50px; left: 95px;">
+        <a href="dwarf.html">Dwarf</a>
+        <a href="elf.html">Elf</a>
+        <a href="gnome.html">Gnome</a>
+        <a href="helf.html">Half-elf</a>
+        <a href="halfling.html">Halfing</a>
+        <a href="horc.html">Half-orc</a>
+        <a href="human.html">Human</a>
+        <a href="tiefling.html">Tiefling</a>
+        <a href="yordle.html">Yordle</a>
+        <a href="felidae.html">Felidae</a>
+      </div>
     </div>
-
-  <div class="box2">
-  <div class="blocktext">
-    <p>
-      <a href="dwarf.html">Races</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="assassin.html">Classes</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="clericspells.html">Spell Lists</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="spells.html">Spells</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="armaments.html">Equipment</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="heritagedwarf.html">Advantages</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="combat.html">Da Rulz</a></p>
-        </div></div>
-
-
-
+    <div class="dropdown">
+      <button class="dropbtn"; style="font-size:25px; position: fixed; top: 0px; left: 200px;">Classes</button>
+      <div class="dropdown-content" style="position: fixed; top: 50px; left: 200px;">
+        <a href="assassin.html">Assassin</a>
+        <a href="barbarian.html">Barbarian</a>
+        <a href="bard.html">Bard</a>
+        <a href="cleric.html">Cleric</a>
+        <a href="druid.html">Druid</a>
+        <a href="fighter.html">Fighter</a>
+        <a href="knight.html">Knight</a>
+        <a href="monk.html">Monk</a>
+        <a href="paladin.html">Paladin</a>
+        <a href="ranger.html">Ranger</a>
+        <a href="rogue.html">Rogue</a>
+        <a href="wizard.html">Wizard</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn"; style="font-size:25px; position: fixed; top: 0px; left: 330px;">Spell Lists</button>
+      <div class="dropdown-content" style="position: fixed; top: 50px; left: 330px;">
+        <a href="clericspells.html">Cleric</a>
+        <a href="druidspells.html">Druid</a>
+        <a href="wizardspells.html">Wizard</a>
+        <a href="illusionistspells.html">Illusionist</a>
+      </div>
+    </div>
+      <a href="spells.html" style="font-size:25px; position: fixed; top: 17px; left: 495px;">Spells</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="dropdown">
+        <button class="dropbtn"; style="font-size:25px; position: fixed; top: 0px; left: 570px;">Equipment</button>
+        <div class="dropdown-content" style="position: fixed; top: 50px; left: 570px;">
+          <a href="armaments.html">Armaments</a>
+          <a href="weapons.html">Weapons</a>
+          <a href="mwk.html">Masterworks</a>
+          <a href="transport_animals_tack.html">Transport</a>
+          <a href="pelts_skins.html">Pelt</a>
+          <a href="equipment.html">Equipment</a>
+          <a href="clothing.html">Clothing</a>
+          <a href="provisions.html">Provisions</a>
+          <a href="unique_rare_class_specific.html">Unique</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn"; style="font-size:25px; position: fixed; top: 0px; left: 730px;">Advantages</button>
+        <div class="dropdown-content" style="position: fixed; top: 50px; left: 730px;">
+          <a href="heritagedwarf.html">Dwarven</a>
+          <a href="heritageelf.html">Elven</a>
+          <a href="heritagegnome.html">Gnome</a>
+          <a href="heritagehelf.html">Half-Elven</a>
+          <a href="heritagehorc.html">Half-orc</a>
+          <a href="combatadvantagemelee.html">Meele</a>
+          <a href="combatadvantagedefensive.html">Defensive</a>
+          <a href="combatadvantageranged.html">Ranged</a>
+          <a href="generaladvantages.html">General</a>
+          <a href="magicaladvantages.html">Magical</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn"; style="font-size:25px; position: fixed; top: 0px; left: 900px">Da Rulz</button>
+        <div class="dropdown-content" style="position: fixed; top: 50px; left: 900px;">
+          <a href="Combat.html">Combat</a>
+          <a href="Magic.html">Magic</a>
+          <a href="gnome.html">Encumbrance</a>
+          <a href="helf.html">Turning Undead</a>
+          <a href="halfling.html">EXP</a>
+          <a href="horc.html">Spell Resistance</a>
+          <a href="human.html">Attributes</a>
+          <a href="tiefling.html">Critical Hits</a>
+        </div>
+      </div>
+    </p>
 <!-- IDEA:  <img src="https://www.enworld.org/attachments/tribute-dmg-jpeg.146907/" style="align:center">  -->
 <!-- IDEA:   <img src="https://1.bp.blogspot.com/-dY1-V167Kjo/YZVr3gerlXI/AAAAAAAAgJo/Meeb-lyx_CAzIO346DYBMkV-B3H3PZuBwCLcBGAsYHQ/s1500/PH%2BTribute%2BResized.jpg
 " class="center"> -->
