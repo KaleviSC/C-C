@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+      table,th,td{
+        border: 1px solid black;
+      }
+      div.spelltable {
+        float:left;
+      }
+      div.box {
+        border: 5px solid black;
+        margin-left:auto;
+        margin-right:auto;
+        background:lightblue;
+      }
+      tr:nth-child(6n-1) td, tr:nth-child(6n-2) td, tr:nth-child(6n-3) td {
+    background: #cccccc;
+  }
+  div.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75em
+}
+div.box2 {
+  border: 5px solid black;
+  margin-left:auto;
+  margin-right:auto;
+  opacity: 0.8;
+  background:lightblue;
+  padding: 5px;
+  width: 1200px
+}
+body {
+  background-image: url('https://1.bp.blogspot.com/-dY1-V167Kjo/YZVr3gerlXI/AAAAAAAAgJo/Meeb-lyx_CAzIO346DYBMkV-B3H3PZuBwCLcBGAsYHQ/s1500/PH%2BTribute%2BResized.jpg');
+}
+a:link {
+color: black;
+}
+a:visited {
+color: black;
+}
+    </style>
+    <meta charset="utf-8">
+    <title>Castles & Crusades Archer</title>
+  </head>
+  <body onload="myFunction()">
+    <div class="box">
+      <h1 style="text-align:center"><a href="main.html">Castles & Crusades</a></h1>
+    </div>
+<div class="blocktext">
+<div class="box2">
+  <p>
+    <a href="dwarf.html">Races</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="assassin.html">Classes</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="clericspells.html">Spell Lists</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="spells.html">Spells</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="armaments.html">Equipment</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="heritagedwarf.html">Advantages</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="combat.html">Da Rulz</a></p>
+
+
+
+    <b>Core Classes: </b>
+    <a href="assassin.html">Assassin (Dexterity)</a>
+    <a href="barbarian.html">Barbarian (Constitution)</a>
+    <a href="bard.html">Bard (Charisma)</a>
+    <a href="cleric.html">Cleric (Wisdom)</a>
+    <a href="druid.html">Druid (Wisdom)</a>
+    <a href="fighter.html">Fighter (Strength)</a>
+    <a href="knight.html">Knight (Charisma)</a>
+    <a href="monk.html">Monk (Constitution)</a>
+    <a href="paladin.html">Paladin (Charisma)</a>
+    <a href="ranger.html">Ranger (Strength)</a>
+    <a href="rogue.html">Rogue (Dexterity)</a>
+    <a href="wizard.html">Wizard (Intelligence)</a>
+      <p>  <b>Other Classes</b>
+    <a href="archer.html">Archer (Dexterity)</a>
+    <a href="illusionist.html">Illusionist (Intelligence)</a></p>
+
+
+
+    <h1 style="text-align:center">Archer (Dexterity)</h1>
+    <br>
+    <p><b>Prime Attribute:</b> Dexterity</p>
+        <p><b>Hit Die:</b> d8</p>
+        <p> (Optional)<b>Alignment:</b> Any</p>
+        <p><b>Weapons:</b> Any bow or crossbow, one-handed melee weapons.</p>
+        <p><b>Armor:</b>Leather, padded, hide, studded leather, chain, scale, ring</p>
+        <p><b>Abilities:</b>
+          <a href="#archer_master_archer">Master Archer, </a>
+          <a href="#archer_eagle_eye">Eagle Eye, </a>
+          <a href="#archer_unstable_shooting">Unstable Shooting, </a>
+          <a href="#archer_master_bowyer">Master Bowyer, </a>
+          <a href="#archer_blinding_speed">Blinding Speed, </a>
+          <a href="#archer_rapid_shot">Rapid Shot, </a>
+          <a href="#archer_deadeye_shot">Deadeye Shot, </a>
+          <a href="#archer_combat_sense">Combat Sense, </a>
+        <p><b>Starting Gold:</b> 30-240gp (3d8*10)</p>
+        <table>
+        <tr>
+          <th>Level</th>
+          <th>HD</th>
+          <th>BtH&nbsp;</th>
+          <th>Exp</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>d8</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>d8</td>
+          <td>+1</td>
+          <td>2.251</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>d8</td>
+          <td>+2</td>
+          <td>4.501</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>d8</td>
+          <td>+3</td>
+          <td>9.001</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>d8</td>
+          <td>+4</td>
+          <td>18.001</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>d8</td>
+          <td>+5</td>
+          <td>40.001</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>d8</td>
+          <td>+6</td>
+          <td>75.001</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>d8</td>
+          <td>+7</td>
+          <td>150.001</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>d8</td>
+          <td>+8</td>
+          <td>250.001</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>d8</td>
+          <td>+9</td>
+          <td>500.001</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>+4 HP</td>
+          <td>+10</td>
+          <td>725.001</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>+4 HP</td>
+          <td>+11</td>
+          <td>950.001</td>
+        </tr>
+        <tr>
+          <td>13+</td>
+          <td>+225.000 per level</td>
+        </table>
+
+<h5 id="archer_master_archer">MASTER ARCHER</h5>
+Archers gain +1 to hit and damage
+with any bow or crossbow. At 7th level, this bonus increases
+to +2 to hit and damage.
+
+<h5 id="archer_eagle_eye">EAGLE EYE</h5>
+
+Through his ability to shoot with the wind,
+lead targets, and sight in on a small target zone, the archer
+can double the effective range of any bow or crossbow
+that he uses. However, due to the intense concentration required
+to make such shots, the archer cannot perform dual
+shots, blinding speed, or unstable firing when employing
+eagle eye.
+
+<h5 id="archer_unstable_shooting">UNSTABLE SHOOTING</h5>
+
+The archer suffers no penalty
+when firing his bow from a moving vehicle, from horseback,
+or from other unstable positions. However, the concentration
+required forbids the use of blinding speed, dual shots, or
+eagle eye when employing unstable shooting.
+
+<h5 id="archer_master_bowyer">MASTER BOWYER (INTELLIGENCE)</h5>
+Given the proper tools and
+materials, such as conditioned staves of wood, the archer can
+manufacture and repair traditional bows, strings, and arrows.
+These bows are of the classic variety: long bows, flat bows, recurves,
+composite bows, horse bows, etc.
+
+<p>If the proper materials are not available, the archer is
+limited in what he can do—with a successful Intelligence
+check, repairs can be affected, and a new, temporary-use
+bow can be created, but these weapons will be at -1 to
+hit and damage, and range will be reduced by 10%. In
+addition, on an imploding dice result, the bow may snap;
+if the imploding follow-up roll on a natural one comes
+up six, the bow snaps and is irreparable. In addition,
+the archer takes 1d6 damage from the breaking bow as
+the tension flies back at him. If the imploding die result
+is less than 6, the wood creaks and cracks, and the bow
+weakens further, suffering a cumulative additional -1 to
+hit and damage, and a further 10% reduction in range.
+Most archers keep a supply of staves and tools at their
+home base, wherever that may be.</p>
+
+<h5 id="archer_blinding_speed">BLINDING SPEED</h5>
+At 2nd level, if the archer has a bow in hand, arrow nocked and ready with his
+other hand on the string, prepared to draw, he gains +4 on initiative in combat.
+
+<h5 id="archer_rapid_shot">RAPID SHOT</h5>
+At 3rd level, the archer increases his rate of
+fire with a bow to 2 shots per round. At seventh level, he is
+capable of firing 3 shots per round, and at fifteenth level, he
+can fire 4 shots per round.
+
+
+<h5 id="archer_deadeye_shot">DEADEYE SHOT (INTELLIGENCE)</h5>
+At 5th level, an archer is able to incapacitate an opponent upon a successful
+called shot (-8 to hit).
+Called shots may only be made if the archer takes the time to aim and fire.
+The attacker must remain stationary in their firing stance for one full round
+ before making their called shot. The archer must score a hit roll upon the
+ target and make a successful intelligence check to incapacitate to succeed.
+
+<p>If successful, the arrow strikes the victim in such a way as to temporarily
+incapacitate the target. For instance, the arrow may have severed a nerve in the
+ leg or arm, forcing the target to fall to the ground or drop their weapon. The
+ target is physically incapacitated for 2 rounds. They cannot act offensively
+ though they can still speak, crawl about etc. Any attacks made against them are
+ made at +5.</p>
+
+
+ <h5 id="archer_combat_sense">COMBAT SENSE</h5>
+At 7th level, the archer is able to sense an arrow coming at them. Sense arrow
+allows them to intuit the tell-tale signs of the arrow or bolt being fired. The
+terrain around him may be ideal for a shot, the slight sound of the bow bending,
+the twang of the string, the arrow flying. This sense increases their AC
+against an arrow or bolt being shot at them by +1 for every 3 levels. ie +1
+at 7th level, +2 at 10th level etc. to a maximum of +5. The archer cannot use
+dual shots during the round.
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
